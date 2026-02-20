@@ -6,7 +6,7 @@ public class JavaCalculatorLoop {
         int choice;
 
         do {
-            System.out.println("\n--- Calculator Menu ---");
+            System.out.println("--- Calculator Menu ---");
             System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Exit");
             System.out.print("Choose an option: ");
             choice = sc.nextInt();
@@ -17,22 +17,25 @@ public class JavaCalculatorLoop {
             }
 
             System.out.print("Enter first number: ");
-            double n1 = sc.nextDouble(); // Precise calculations ke liye double
+            double n1 = sc.nextDouble();
             System.out.print("Enter second number: ");
             double n2 = sc.nextDouble();
             double result = 0;
 
             switch (choice) {
-                case 1: result = n1 + n2; break;
-                case 2: result = n1 - n2; break;
-                case 3: result = n1 * n2; break;
+                case 1: result = n1 + n2;
+                      break;
+                case 2: result = n1 - n2;
+                      break;
+                case 3: result = n1 * n2;
+                      break;
                 case 4:
                     if (n2 != 0) result = n1 / n2;
                     else System.out.println("Error: Cannot divide by zero!");
                     break;
                 default:
                     System.out.println("Invalid choice!");
-                    continue; // Loop ke start pe wapas le jayega
+                    continue;
             }
 
             if (choice >= 1 && choice <= 4) {
