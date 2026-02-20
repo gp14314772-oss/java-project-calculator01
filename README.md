@@ -1,5 +1,4 @@
 # Java Calculator
-This is my first java project.
 It is a simple calculator program created while learning Java basics.
 
 ## Features 
